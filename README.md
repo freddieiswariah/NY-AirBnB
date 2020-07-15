@@ -30,7 +30,7 @@ availability_365               |  int64  | No. of nights listing is available pe
 The data series id, name, host_id, host_name and last_review were omitted for the modelling.
 
 ## Exploratory Analysis Highlights
-![alt text](image.jpg)
+![alt text](Pivot_3.PNG) ![alt text](Pivot_1.PNG) 
 
 ## Model performances
 
@@ -41,7 +41,6 @@ The linear regression performed poorly, most likely due to the sparse nature of 
 The random forest regressor was tried next, which after some tuning gave an MAE of $64.29. However, this error is most likely being skewed by some very highly priced listings that all the models are struggling to predict (as found in the EPA histogram of price). Removing all listings that are $300 or greater should help make more accurate predictions for the majority of rooms.
 
 ~3000 listings were removed and a new random forest regression was done on the new data (the same hyperparameters were used to save some time on tuning). The MAE on the new test data was $30.81, more than twice as good as the initial prediction. This model would be more useful for >90% of listings. 
-
 
 
 
