@@ -30,7 +30,13 @@ availability_365               |  int64  | No. of nights listing is available pe
 The data series id, name, host_id, host_name and last_review were omitted for the modelling.
 
 ## Exploratory Analysis Highlights
-![alt text](Pivot_3.PNG) ![alt text](Pivot_1.PNG) 
+![alt text](Heat_Map.PNG) 
+
+> **A correlation heatmap. Look at the correlation with price for the most important information for this example.**
+
+![alt text](Pivot_3.PNG)
+
+![alt text](Pivot_1.PNG)
 
 ## Model performances
 
